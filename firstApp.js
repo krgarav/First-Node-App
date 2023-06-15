@@ -11,8 +11,6 @@ app.use((req, res, next) => {
   console.log("In the next middleware");
   
 });
-const server = http.createServer(app);
-
-server.listen(4000, () => {
+app.listen(3000,() => {
   console.log("Server is runing on port 4000");
-});
+})
